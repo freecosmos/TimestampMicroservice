@@ -17,13 +17,13 @@ app.get('/:time', function(req, res){
   if (isNaN(time) == true) {
      response = {
      unix: moment(time).unix(),
-     natural: moment(time).format('MMMM DD, YYYY')
+      natural: moment(time).format('MMMM DD, YYYY')
     }
   } else if (isNaN(time) == false) {
       var time = parseInt(time, 10)*1000;
       response = {
       unix: moment(time).unix(),
-      natural: moment(time).format('MMMM DD, YYYY')
+       natural: moment(time).format('MMMM DD, YYYY')
      }
   } else {
     var response = {
