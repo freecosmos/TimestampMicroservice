@@ -3,7 +3,7 @@
 <html>
 
    <head>
-      <title>Timestamp Microservice</title>
+           <title>Timestamp Microservice</title>
    </head>
 
    <body>
@@ -12,17 +12,21 @@
          <blockquote>
             User stories:
             <ul>1) I can pass a string as a parameter, and it will check to see
-	           whether that string contains either a unix timestamp or a natural                             language date (example: January 1, 2016)</ul>
-	    <ul>2) If it does, it returns both the Unix timestamp and the natural
-		   language form of that date.</ul>
+	                 whether that string contains either a unix timestamp or a natural
+                   language date (example: January 1, 2016)</ul>
+	          <ul>2) If it does, it returns both the Unix timestamp and the natural
+		               language form of that date.</ul>
             <ul>3) If it does not contain a date or Unix timestamp, it returns null
-		   for those properties.</ul>
+		               for those properties.</ul>
          </blockquote>
          <h1>Example usage:</h1>
             <p>
+                  enter <code>https://tmservicecosmos.herokuapp.com/April%2015%202017</code><br>
+                  or <code>https://tmservicecosmos.herokuapp.com/1492214400</code>
             </p>
          <h1>Example output</h1>
             <p>
+                  <code>{ "unix":1492214400, "natuaral": "April 15, 2017"}</code>
             </p>
       </div>
 
